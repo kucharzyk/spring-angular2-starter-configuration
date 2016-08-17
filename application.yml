@@ -1,0 +1,2 @@
+info:
+  id: ${spring.application.name}
