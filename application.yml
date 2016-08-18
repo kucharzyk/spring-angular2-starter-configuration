@@ -1,6 +1,0 @@
-info:
-  id: ${spring.application.name}
-
-foo:
-    bar: baz
-    baz: bar

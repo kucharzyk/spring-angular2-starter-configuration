@@ -1,0 +1,50 @@
+
+# EMBEDDED SERVER CONFIGURATION
+server:
+    port: ${port:8083}
+    context-path: /
+    use-forward-headers: true
+    error.whitelabel.enabled: false
+    compression:
+      enabled: true
+      min-response-size: 1024
+      mime-types:
+          - text/html
+          - text/css
+          - text/plain
+          - text/xml
+          - application/json
+          - application/javascript
+
+# EUREKA
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+# LOGGING
+#logging.level.org.springframework.security: DEBUG
+
+---
+
+spring:
+  profiles: docker
+
+# EUREKA
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service:8081/eureka/
+
+---
+
+spring:
+  profiles: standalone
+
+# EUREKA
+eureka:
+  instance:
+    hostname: localhost
+    port: 8081
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
