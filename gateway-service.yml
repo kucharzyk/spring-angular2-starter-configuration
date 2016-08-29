@@ -16,7 +16,7 @@ zuul:
     auth-service:
       sensitiveHeaders:
       path: /oauth/**
-      stripPrefix: true
+      stripPrefix: false
     api-service:
       sensitiveHeaders:
       path: /**
