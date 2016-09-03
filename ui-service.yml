@@ -88,4 +88,4 @@ zuul:
      gateway-service:
           url: http://${eureka.instance.hostname}:8090
      auth-service:
-          url: http://${eureka.instance.hostname}:8883
+          url: http://${eureka.instance.hostname}:8083
