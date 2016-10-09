@@ -13,10 +13,15 @@ eureka:
 # ZULL
 zuul:
   routes:
-     api-service:
-          sensitiveHeaders:
-          path: /api/**
-          stripPrefix: true
+    auth-service:
+      sensitiveHeaders:
+      path: /oauth/**
+      stripPrefix: false
+    # ai-service should be moved to path other than /
+    api-service:
+      sensitiveHeaders:
+      path: /**
+      stripPrefix: true
   add-proxy-headers: true
 #SECURITY
 security:
