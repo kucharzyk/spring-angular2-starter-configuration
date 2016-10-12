@@ -1,6 +1,6 @@
 # EMBEDDED SERVER CONFIGURATION
 server:
-    port: ${port:8082}
+    port: ${port:8102}
     context-path: /
     error.whitelabel.enabled: false
     compression:

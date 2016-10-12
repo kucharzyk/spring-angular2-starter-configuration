@@ -60,9 +60,7 @@ eureka:
 zuul:
   routes:
      gateway-service:
-          url: http://gateway-service:8090
-     auth-service:
-          url: http://auth-service:8083
+          url: http://gateway-service:8100
 
 ---
 
@@ -82,6 +80,5 @@ eureka:
 zuul:
   routes:
      gateway-service:
-          url: http://${eureka.instance.hostname}:8090
-     auth-service:
-          url: http://${eureka.instance.hostname}:8083
+          url: http://${eureka.instance.hostname}:8100
+

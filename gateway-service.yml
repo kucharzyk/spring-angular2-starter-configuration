@@ -1,6 +1,6 @@
 # EMBEDDED SERVER CONFIGURATION
 server:
-    port: ${port:8090}
+    port: ${port:8100}
 
 spring:
     aop:
@@ -17,10 +17,13 @@ zuul:
       sensitiveHeaders:
       path: /oauth/**
       stripPrefix: false
-    # ai-service should be moved to path other than /
     api-service:
       sensitiveHeaders:
-      path: /**
+      path: /api/**
+      stripPrefix: true
+    api-service:
+      sensitiveHeaders:
+      path: /api/**
       stripPrefix: true
   add-proxy-headers: true
 #SECURITY
