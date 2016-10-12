@@ -17,13 +17,13 @@ zuul:
       sensitiveHeaders:
       path: /oauth/**
       stripPrefix: false
-    api-service:
+    user-api-service:
       sensitiveHeaders:
-      path: /api/**
+      path: /api/user/**
       stripPrefix: true
-    api-service:
+    blog-api-service:
       sensitiveHeaders:
-      path: /api/**
+      path: /api/blog/**
       stripPrefix: true
   add-proxy-headers: true
 #SECURITY
