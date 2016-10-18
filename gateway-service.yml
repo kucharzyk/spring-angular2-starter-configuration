@@ -20,11 +20,11 @@ zuul:
     user-api-service:
       sensitiveHeaders:
       path: /user/**
-      stripPrefix: true
+      stripPrefix: false
     blog-api-service:
       sensitiveHeaders:
       path: /blog/**
-      stripPrefix: true
+      stripPrefix: false
   add-proxy-headers: true
 #SECURITY
 security:
