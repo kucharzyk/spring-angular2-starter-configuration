@@ -16,15 +16,15 @@ zuul:
     auth-service:
       sensitiveHeaders:
       path: /oauth/**
-      stripPrefix: false
+      stripPrefix: true
     user-api-service:
       sensitiveHeaders:
       path: /user/**
-      stripPrefix: false
+      stripPrefix: true
     blog-api-service:
       sensitiveHeaders:
       path: /blog/**
-      stripPrefix: false
+      stripPrefix: true
   add-proxy-headers: true
 #SECURITY
 security:
