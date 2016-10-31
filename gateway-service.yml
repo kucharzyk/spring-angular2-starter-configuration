@@ -21,7 +21,7 @@ zuul:
     api-service-posts:
       sensitiveHeaders:
       path: /posts/**
-      stripPrefix: false
+      stripPrefix: true
     api-service-user:
       sensitiveHeaders:
       path: /user
@@ -29,7 +29,7 @@ zuul:
     api-service-title:
       sensitiveHeaders:
       path: /title
-      stripPrefix: false
+      stripPrefix: true
     api-service-error:
       sensitiveHeaders:
       path: /error
