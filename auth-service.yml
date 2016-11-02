@@ -2,7 +2,7 @@
 # EMBEDDED SERVER CONFIGURATION
 server:
     port: ${port:8083}
-    context-path: /api/
+    context-path: /
     use-forward-headers: true
     error.whitelabel.enabled: false
     compression:
