@@ -20,7 +20,7 @@ zuul:
     # ai-service should be moved to path other than /
     api-service:
       sensitiveHeaders:
-      path: /**
+      path: /api/**
       stripPrefix: true
   add-proxy-headers: true
 #SECURITY
