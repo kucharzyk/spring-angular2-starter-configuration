@@ -18,22 +18,10 @@ zuul:
       path: /oauth/**
       stripPrefix: false
     # ai-service should be moved to path other than /
-    api-service-posts:
+    api-service:
       sensitiveHeaders:
-      path: /posts/**
+      path: /api/**
       stripPrefix: true
-    api-service-user:
-      sensitiveHeaders:
-      path: /user
-      stripPrefix: false
-    api-service-title:
-      sensitiveHeaders:
-      path: /title
-      stripPrefix: true
-    api-service-error:
-      sensitiveHeaders:
-      path: /error
-      stripPrefix: false
   add-proxy-headers: true
 #SECURITY
 security:
